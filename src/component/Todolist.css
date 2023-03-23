@@ -1,0 +1,10 @@
+.close:hover {
+
+    color: red;
+}
+.add:hover {
+    color: #28A745;
+}
+.wid {
+    width: 75%;
+}
