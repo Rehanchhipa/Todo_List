@@ -27,9 +27,9 @@ function Todolist() {
 
     return (
         <>
-            <div className='container bg-dark'>
+            <div className='container bg-dark h-100'>
                 <div className='row'>
-                    <div className="col-4 mx-auto my-5 pb-4 bg-warning">
+                    <div className="col-10 col-md-6 col-lg-4 mx-auto my-5 pb-4 bg-warning">
                         <h1 className='text-center bg-light my-4 hi'>TodoList</h1>
                         <input className='w-75' type="text" onChange={handleOnChange} value={text} />
                         <button onClick={handleOnAdd} className='border-0 bg-transparent ms- fw-bolder add'><i className="fa-solid fa-circle-plus"></i></button>
