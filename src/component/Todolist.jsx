@@ -3,6 +3,7 @@ import './Todolist.css'
 
 function Todolist() {
 
+    document.body.style.backgroundColor = "#212529";
     const [text, setText] = useState("")
 
     const handleOnChange = (event) => {
