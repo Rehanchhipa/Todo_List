@@ -30,10 +30,8 @@ function Todolist() {
 
 
     useEffect(() => {
-        console.log("set wala lock")
         setTimeout(() => {
             localStorage.setItem("todo_list", JSON.stringify(list))
-            console.log("settime out")
         }, 100)
     }, [list])
 
@@ -41,14 +39,11 @@ function Todolist() {
 
         if (text !== "") {
             if (btnicon === true) {
-        
+
                 list[value] = text
                 setText("")
                 setList([...list])
                 setBtnicon(false)
-                // list[data1] = text.value
-                // setText("")
-                // setList(list)
             }
             else {
                 setList([...list, text])
@@ -85,7 +80,7 @@ function Todolist() {
         <>
             <div className='container bg-dark h-100'>
                 <div className='row'>
-                    <div className="col-10 col-md-6 col-lg-4 mx-auto my-5 pb-4 bg-warning">
+                    <div className="col-10 col-md-10 col-lg-4 mx-auto my-5 pb-4 bg-warning">
                         <h1 className='text-center bg-light my-4 hi'>TodoList</h1>
                         <input className='w-75' type="text" onChange={handleOnChange} value={text} />
                         <span onClick={handleOnAdd} className='ms-2'>
